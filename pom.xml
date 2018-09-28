@@ -205,6 +205,153 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<!-- 百度云对象存储 BOS 依赖组件 -->
+		<dependency>
+			<groupId>1</groupId>
+			<artifactId>bce-java-sdk-0.10.34</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/bce-java-sdk-0.10.34.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>2</groupId>
+			<artifactId>commons-codec-1.9</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-codec-1.9.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>3</groupId>
+			<artifactId>commons-io-2.4</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-io-2.4.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>4</groupId>
+			<artifactId>commons-lang3-3.5</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-lang3-3.5.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>5</groupId>
+			<artifactId>commons-logging-1.1.3</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-logging-1.1.3.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>6</groupId>
+			<artifactId>guava-17.0</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/guava-17.0.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>7</groupId>
+			<artifactId>httpasyncclient-4.0.2</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/httpasyncclient-4.0.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>8</groupId>
+			<artifactId>httpclient-4.3.5</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/httpclient-4.3.5.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>9</groupId>
+			<artifactId>httpcore-4.3.2</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/httpcore-4.3.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>10</groupId>
+			<artifactId>httpcore-nio-4.3.2</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/httpcore-nio-4.3.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>11</groupId>
+			<artifactId>jackson-annotations-2.1.1</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jackson-annotations-2.1.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>12</groupId>
+			<artifactId>jackson-core-2.1.1</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jackson-core-2.1.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>13</groupId>
+			<artifactId>jackson-databind-2.1.1</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jackson-databind-2.1.1.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>14</groupId>
+			<artifactId>jcl-over-slf4j-1.7.7</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jcl-over-slf4j-1.7.7.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>15</groupId>
+			<artifactId>joda-time-2.3</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/joda-time-2.3.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>16</groupId>
+			<artifactId>logback-classic-1.1.2</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/logback-classic-1.1.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>17</groupId>
+			<artifactId>logback-core-1.1.2</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/logback-core-1.1.2.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>18</groupId>
+			<artifactId>slf4j-api-1.7.7</artifactId>
+			<version>0.10.34</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/slf4j-api-1.7.7.jar</systemPath>
+		</dependency>
+		<!-- 百度云对象存储 BOS 依赖组件 -->
+
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>

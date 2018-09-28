@@ -2,27 +2,27 @@ package io.renren.common.utils;
 
 /**
  * 常量
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2016年11月15日 下午1:23:52
+ *
+ * @author Admin
+ * @date 2018年09月28日
  */
 public class Constant {
-	/** 超级管理员ID */
-	public static final int SUPER_ADMIN = 1;
+    /**
+     * 超级管理员ID
+     */
+    public static final int SUPER_ADMIN = 1;
 
-	/**
-	 * 菜单类型
-	 * 
-	 * @author chenshun
-	 * @email sunlightcs@gmail.com
-	 * @date 2016年11月15日 下午1:24:29
-	 */
+    /**
+     * 菜单类型
+     *
+     * @author Admin
+     * @date 2018年09月28日
+     */
     public enum MenuType {
         /**
          * 目录
          */
-    	CATALOG(0),
+        CATALOG(0),
         /**
          * 菜单
          */
@@ -42,30 +42,29 @@ public class Constant {
             return value;
         }
     }
-    
+
     /**
      * 定时任务状态
-     * 
-     * @author chenshun
-     * @email sunlightcs@gmail.com
-     * @date 2016年12月3日 上午12:07:22
+     *
+     * @author Admin
+     * @date 2018年09月28日
      */
     public enum ScheduleStatus {
         /**
          * 正常
          */
-    	NORMAL(0),
+        NORMAL(0),
         /**
          * 暂停
          */
-    	PAUSE(1);
+        PAUSE(1);
 
         private int value;
 
         ScheduleStatus(int value) {
             this.value = value;
         }
-        
+
         public int getValue() {
             return value;
         }
@@ -86,7 +85,11 @@ public class Constant {
         /**
          * 腾讯云
          */
-        QCLOUD(3);
+        QCLOUD(3),
+        /**
+         * 百度云
+         */
+        BAIDU(4);
 
         private int value;
 

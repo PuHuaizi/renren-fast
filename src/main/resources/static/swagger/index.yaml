@@ -1465,7 +1465,7 @@ definitions:
     type: object
     properties:
       type:
-        description: 类型 1：七牛  2：阿里云  3：腾讯云
+        description: 类型 1：七牛  2：阿里云  4：腾讯云  3：百度云
         type: integer
         format: int32
       qiniuDomain:
@@ -1521,6 +1521,27 @@ definitions:
         type: string
       qcloudRegion:
         description: 腾讯云COS所属地区
+        type: string
+      baiduDomain:
+        description: 百度云绑定的域名
+        type: string
+      baiduPrefix:
+        description: 百度云路径前缀
+        type: string
+      baiduEndPoint:
+        description: 百度云EndPoint
+        type: string
+      baiduAccessKeyID:
+        description: 百度云AccessKeyID
+        type: string
+      baiduSecretAccessKey:
+        description: 百度云SecretAccessKey
+        type: string
+      baiduBucketName:
+        description: 百度云BucketName
+        type: string
+      baiduRegion:
+        description: 百度云BOS所属地区
         type: string
   FileUpload:
       type: object

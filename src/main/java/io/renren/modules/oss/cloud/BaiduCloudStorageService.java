@@ -3,10 +3,11 @@ package io.renren.modules.oss.cloud;
 import com.baidubce.auth.DefaultBceCredentials;
 import com.baidubce.services.bos.BosClient;
 import com.baidubce.services.bos.BosClientConfiguration;
-import com.baidubce.services.bos.model.PutObjectResponse;
 import io.renren.common.exception.RRException;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 
 /**
@@ -46,7 +47,7 @@ public class BaiduCloudStorageService extends CloudStorageService {
         System.out.println(path);
         // 获取数据流
         try {
-            inputStream = new FileInputStream("C:\\Users\\Admin\\Desktop\\下载测试页面\\BaiDuTest.png");
+            inputStream = new FileInputStream(path);
         } catch (Exception e) {
             throw new RRException("系统找不到指定的路径", e);
         }
@@ -62,7 +63,7 @@ public class BaiduCloudStorageService extends CloudStorageService {
         // }
         client.putObject(bucketName, objectKey, inputStream);
 
-        return config.getQcloudDomain() + "/" + path;
+        return config.getBaiduDomain() + "/" + path;
     }
 
     @Override

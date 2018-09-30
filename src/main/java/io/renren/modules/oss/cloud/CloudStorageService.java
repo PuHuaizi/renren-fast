@@ -52,7 +52,9 @@ public abstract class CloudStorageService {
             path = prefix + "/" + path;
         }
 
-        return path + suffix;
+        // return path + suffix;
+        // 设置百度云对象存储 Object 文件名称
+        return suffix;
     }
 
     /**

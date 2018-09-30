@@ -4,6 +4,7 @@ import com.baidubce.auth.DefaultBceCredentials;
 import com.baidubce.services.bos.BosClient;
 import com.baidubce.services.bos.BosClientConfiguration;
 import io.renren.common.exception.RRException;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
@@ -44,24 +45,16 @@ public class BaiduCloudStorageService extends CloudStorageService {
 
     @Override
     public String upload(InputStream inputStream, String path) {
-        System.out.println(path);
-        // 获取数据流
-        try {
-            inputStream = new FileInputStream(path);
-        } catch (Exception e) {
-            throw new RRException("系统找不到指定的路径", e);
-        }
-
-        // String objectKey = new String();
-        String objectKey = "123456";
+        // 设置百度云对象存储 Object 文件名称
+        String objectKey = path;
+        // 设置百度云 BucketName
         String bucketName = config.getBaiduBucketName();
         // 以数据流形式上传Object
-        // try {
-        //     client.putObject(bucketName, objectKey, inputStream);
-        // } catch (Exception e) {
-        //     throw new RRException("上传文件失败，请检查配置信息", e);
-        // }
-        client.putObject(bucketName, objectKey, inputStream);
+        try {
+            client.putObject(bucketName, objectKey, inputStream);
+        } catch (Exception e) {
+            throw new RRException("上传文件失败，请检查配置信息", e);
+        }
 
         return config.getBaiduDomain() + "/" + path;
     }

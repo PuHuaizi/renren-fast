@@ -17,7 +17,7 @@
 package io.renren.modules.oss.cloud;
 
 import io.renren.common.utils.DateUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.InputStream;
 import java.util.Date;

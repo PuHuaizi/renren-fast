@@ -385,6 +385,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<fork>true</fork>
+					<includeSystemScope>true</includeSystemScope>
 				</configuration>
 			</plugin>
 			<!-- 跳过单元测试 -->

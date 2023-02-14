@@ -39,7 +39,7 @@
 		<swagger.version>2.7.0</swagger.version>
 		<joda.time.version>2.9.9</joda.time.version>
 		<fastjson.version>1.2.83</fastjson.version>
-		<hutool.version>4.1.12</hutool.version>
+		<hutool.version>5.8.11</hutool.version>
 
 		<!-- 百度云对象存储 BOS 依赖组件 -->
 		<bce-java-sdk.version>0.10.34</bce-java-sdk.version>

@@ -360,11 +360,11 @@
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
 			<version>${hutool.version}</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<build>
